@@ -6,10 +6,11 @@
   "scripts": {
     "start": "npm run start:dev",
     "start:dev": "npx ts-node ./src/app.ts",
-    "start:prod": "npm run build && node dist/app.js",
+    "start:prod": "npm run build:release && node dist/app.js",
     "watch": "npm run watch:dev",
     "watch:dev": "npx nodemon",
-    "build": "rimraf ./dist && tsc",
+    "build": "rimraf ./dist && tsc --project tsconfig.json",
+    "build:release": "rimraf ./dist && tsc --project tsconfig.production.json",
     "update-packages": "npm run update-packages:minor",
     "update-packages:check": "npx -- npm-check-updates",
     "update-packages:major": "npx -- npm-check-updates --target latest -u",
