@@ -1,3 +1,7 @@
 import { HelloWorld } from "./hello-world";
 
-console.log(new HelloWorld().greet());
+async function runAsync(): Promise<void> {
+  console.log(new HelloWorld().greet());
+};
+
+runAsync();
