@@ -16,7 +16,8 @@
     "update-packages:major": "npx -- npm-check-updates --target latest -u",
     "update-packages:minor": "npx -- npm-check-updates --target minor -u",
     "update-packages:patch": "npx -- npm-check-updates --target patch -u",
-    "test": "jest ./tests"
+    "test": "jest ./tests --coverage=false",
+    "test:coverage": "jest ./tests --coverage"
   },
   "keywords": [],
   "author": "",
