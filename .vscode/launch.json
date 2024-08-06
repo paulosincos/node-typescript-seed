@@ -2,6 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
+            // Configuration for debug application via debug tab
             "name": "Launch program",
             "program": "${workspaceFolder}/src/app.ts",
             "request": "launch",
@@ -12,7 +13,8 @@
             "type": "node"
         },
         {
-            "name": "Run tests",
+            // Configuration for debug unit tests via debug tab
+            "name": "Run test by file",
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/jest",
@@ -26,6 +28,29 @@
             "console": "integratedTerminal",
             "internalConsoleOptions": "neverOpen",
             "sourceMaps": true,
+            "windows": {
+                "program": "${workspaceFolder}/node_modules/jest/bin/jest"
+            }
+        },
+        {
+            // Internal configuration for debug unit tests via test explorer with Jest extension
+            "type": "node",
+            "name": "vscode-jest-tests.v2.node-typescript-seed",
+            "request": "launch",
+            "args": [
+                "--runInBand",
+                "--watchAll=false",
+                "--testNamePattern",
+                "${jest.testNamePattern}",
+                "--runTestsByPath",
+                "--coverage=false",
+                "${jest.testFile}"
+            ],
+            "cwd": "${workspaceRoot}",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMaps": true,
+            "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/jest",
             "windows": {
                 "program": "${workspaceFolder}/node_modules/jest/bin/jest"
             }
