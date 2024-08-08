@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run start:dev",
     "start:dev": "npx ts-node ./src/app.ts",
-    "start:prod": "npm run build:release && node dist/app.js",
+    "start:prod": "npm run build:prod && node dist/app.js",
     "watch": "npm run watch:dev",
     "watch:dev": "npx nodemon",
     "build": "npm run build:dev",
@@ -35,5 +35,9 @@
     "ts-jest": "^29.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.8.0"
   }
 }

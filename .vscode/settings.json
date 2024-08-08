@@ -1,4 +1,8 @@
 {
   "jest.runMode": "on-demand",
   "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.removeUnusedImports": "always",
+    "source.sortImports": "always"
+  }
 }
