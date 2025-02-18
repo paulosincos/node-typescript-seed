@@ -3,7 +3,7 @@ Seed project for NodeJs with TypeScript
 
 Features:
 - Package scripts ready to run, watch, build and test;
-- Separated configurations for development and production environments;
+- Separated configurations for debug, release and test profiles;
 - Easily update packages with pre-defined scripts (via [npm-check-updates][ncu]);
 - Dependency Injection with [tsyringe];
 - Debug configuration ready for [Visual Studio Code][vscode];
