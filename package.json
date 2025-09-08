@@ -1,7 +1,7 @@
 {
   "name": "node-typescript-seed",
   "version": "1.0.0",
-  "description": "A modern TypeScript boilerplate for Node.js projects, featuring ready-to-use scripts, separate build profiles, dependency injection, and testing with Jest.",
+  "description": "A TypeScript boilerplate for Node.js projects, featuring ready-to-use scripts, separate build profiles, dependency injection, and testing with Jest.",
   "main": "app.js",
   "scripts": {
     "start": "npm run start:debug",

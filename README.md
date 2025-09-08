@@ -1,6 +1,6 @@
 # TypeScript Seed for Node.js
 
-This project is a modern starting point for Node.js applications using TypeScript, focused on productivity, organization, and best practices.
+This project is a starting point for Node.js applications using TypeScript, focused on productivity, organization, and best practices.
 
 ## Features
 
