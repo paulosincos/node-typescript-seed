@@ -6,7 +6,7 @@
             "name": "Launch program",
             "program": "${workspaceFolder}/src/app.ts",
             "request": "launch",
-            "preLaunchTask": "npm: build",
+            "preLaunchTask": "npm: build:debug",
             "skipFiles": [
                 "<node_internals>/**"
             ],

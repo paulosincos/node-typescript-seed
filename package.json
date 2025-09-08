@@ -9,7 +9,7 @@
     "start:release": "npm run build:release && node dist/app.js",
     "watch": "npm run watch:debug",
     "watch:debug": "npx nodemon",
-    "build": "npm run build:debug",
+    "build": "npm run build:release",
     "build:debug": "npm run clear && tsc --project tsconfig.debug.json",
     "build:release": "npm run clear && tsc --project tsconfig.release.json",
     "clear": "rimraf ./dist",

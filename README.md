@@ -10,6 +10,7 @@ Seed project for NodeJs with TypeScript.
 - Dependency Injection with [tsyringe];
 - Debug configuration ready for [Visual Studio Code][vscode];
 - Unit tests with [Jest] (test explorer and debug support);
+- Mock pattern for unit tests;
 - And others configurations ready for [Visual Studio Code][vscode];
 
 ## Pre-requisites
@@ -31,8 +32,8 @@ Available package commands:
 - `npm start`: simple execution with debug configuration;
 - `npm run watch`: execute in watch mode;
 - `npm run start:release`: build with release configuration, then execute it;
-- `npm run build`: build with debug configuration, outputs at `dist` folder;
-- `npm run build:release`: build with release configuration;
+- `npm run build`: build with release configuration, outputs at `dist` folder;
+- `npm run build:debug`: build with debug configuration;
 - `npm run clear`: clear built files (`dist` folder);
 - `npm test`: execute tests;
 - `npm run test:watch`: execute tests in watch mode;
@@ -50,6 +51,11 @@ Update dependencies by running:
 npm run update-packages
 npm install
 ```
+
+## Roadmap
+
+- Container ready;
+- Integration tests;
 
 [tsyringe]: https://github.com/microsoft/tsyringe
 [jest]: https://jestjs.io/
