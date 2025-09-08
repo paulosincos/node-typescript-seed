@@ -1,3 +1,5 @@
+// TODO: this is a sample file. Recycle it or remove it.
+
 import { UserCredentials } from "../../src/user-credentials";
 import { Mock } from "./mock";
 import { MockBuilder } from "./mock-builder";

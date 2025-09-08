@@ -1,51 +1,80 @@
-# TypeScript Seed for NodeJs
+# TypeScript Seed for Node.js
 
-Seed project for NodeJs with TypeScript.
+This project is a modern starting point for Node.js applications using TypeScript, focused on productivity, organization, and best practices.
 
 ## Features
 
-- Package scripts ready to run, watch, build and test;
-- Separated configurations for debug, release and test profiles;
-- Easily update packages with pre-defined scripts (via [npm-check-updates][ncu]);
-- Dependency Injection with [tsyringe];
-- Debug configuration ready for [Visual Studio Code][vscode];
-- Unit tests with [Jest] (test explorer and debug support);
+- Ready-to-use scripts for running, watching, building, and testing;
+- Separate configurations for debug, release, and test profiles;
+- Easy dependency updates with pre-defined scripts (via [npm-check-updates][ncu]);
+- Dependency injection with [tsyringe];
+- Debug and general configurations ready for [Visual Studio Code][vscode];
+- Unit testing with [Jest] (test explorer and debug support);
 - Mock pattern for unit tests;
-- And others configurations ready for [Visual Studio Code][vscode];
+- Organized structure, ready to evolve;
 
-## Pre-requisites
+## Prerequisites
 
-- [NodeJs][node] v20+;
+- [Node.js][node] v20 or higher;
 
 ### Recommendations
 
-- Coding with [Visual Studio Code][vscode] and [Jest extension][vscode-jest];
+- Develop using [Visual Studio Code][vscode] and the [Jest extension][vscode-jest];
 
-## Setup
+## Getting Started
 
-Just run `npm install` at project root folder.
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/paulosincos/node-typescript-seed
+   cd node-typescript-seed
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Rename the project:**
+   - Edit `package.json` with your project's name and description.
+4. **(Optional) Remove example files:**
+   - Delete example files in `src/` and `tests/` as needed.
+5. **Start developing:**
+   - Create your source files in `src/` and tests in `tests/`.
 
-## Executing
+## Project Structure
 
-Available package commands:
+```
+├── src/                # Main source code
+├── tests/              # Unit tests and mocks
+├── package.json        # Project configuration and scripts
+├── tsconfig*.json      # TypeScript build profiles
+├── jest.config.js      # Test configuration
+└── README.md           # Documentation
+```
 
-- `npm start`: simple execution with debug configuration;
-- `npm run watch`: execute in watch mode;
-- `npm run start:release`: build with release configuration, then execute it;
-- `npm run build`: build with release configuration, outputs at `dist` folder;
-- `npm run build:debug`: build with debug configuration;
-- `npm run clear`: clear built files (`dist` folder);
-- `npm test`: execute tests;
-- `npm run test:watch`: execute tests in watch mode;
-- `npm run test:coverage`: execute tests and report coverage information;
+## Available Scripts
 
-Take a look at `package.json` to see variants of the commands.
+- `npm start`: Runs with debug configuration;
+- `npm run watch`: Runs in watch mode;
+- `npm run start:release`: Builds in release mode and runs;
+- `npm run build`: Builds in release mode (output in `dist`);
+- `npm run build:debug`: Builds in debug mode;
+- `npm run clear`: Cleans built files (`dist`);
+- `npm test`: Runs tests;
+- `npm run test:watch`: Runs tests in watch mode;
+- `npm run test:coverage`: Runs tests and generates coverage report;
+- `npm run update-packages`: Updates dependencies;
 
-When using [Visual Studio Code][vscode], you can run by its commands, like pressing F5 for run with attached debugger or executing tests directly from test explorer tab.
+See `package.json` for more commands and details.
 
-## Updating dependencies
+## Development Tips
 
-Update dependencies by running:
+- Use F5 key in VS Code to debug with breakpoints.
+- Run tests directly from the test explorer.
+- Use mocks to facilitate isolated tests.
+- Keep your code organized in small, reusable modules.
+
+## Updating Dependencies
+
+To update project dependencies:
 
 ```bash
 npm run update-packages

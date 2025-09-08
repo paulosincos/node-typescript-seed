@@ -1,3 +1,5 @@
+// TODO: this is a sample file. Recycle it or remove it.
+
 import { HelloWorld } from "../src/hello-world";
 import { UserCredentials } from "../src/user-credentials";
 import { Mock } from "./mocks/mock";
