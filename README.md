@@ -15,7 +15,7 @@ This project is a starting point for Node.js applications using TypeScript, focu
 
 ## Prerequisites
 
-- [Node.js][node] v20 or higher;
+- [Node.js][node] v22 or higher;
 
 ### Recommendations
 
@@ -85,6 +85,7 @@ npm install
 
 - Container ready;
 - Integration tests;
+- Use of NodeJs native support to TypeScript
 
 [tsyringe]: https://github.com/microsoft/tsyringe
 [jest]: https://jestjs.io/
