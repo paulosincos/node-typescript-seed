@@ -85,7 +85,7 @@ npm install
 
 - Container ready;
 - Integration tests;
-- Use of NodeJs native support to TypeScript
+- Use of Node.js native support for TypeScript;
 
 [tsyringe]: https://github.com/microsoft/tsyringe
 [jest]: https://jestjs.io/
