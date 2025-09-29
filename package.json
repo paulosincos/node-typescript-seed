@@ -22,7 +22,7 @@
     "test:watch": "jest ./tests --coverage=false --watch=true",
     "test:coverage": "jest ./tests --coverage"
   },
-  "keywords": ["nodejs","typescript","jest","seed"],
+  "keywords": ["nodejs","typescript","jest","seed","template","boilerplate"],
   "author": "paulosincos@hotmail.com",
   "license": "ISC",
   "devDependencies": {
