@@ -27,14 +27,14 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^30.0.0",
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.8.1",
     "jest": "^30.2.0",
     "nodemon": "^3.1.10",
-    "npm-check-updates": "^19.0.0",
+    "npm-check-updates": "^19.1.1",
     "rimraf": "^6.0.1",
-    "ts-jest": "^29.4.4",
+    "ts-jest": "^29.4.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "dependencies": {
     "reflect-metadata": "^0.2.2",
