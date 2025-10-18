@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  my-app:
+    image: my-app-local:latest
+    build:
+      context: .
+      dockerfile: Dockerfile

@@ -81,9 +81,53 @@ npm run update-packages
 npm install
 ```
 
+## Docker
+
+This repository includes a multistage `Dockerfile` that builds the project inside a builder container and produces a minimal runtime image with the compiled `dist` output.
+
+Build the image:
+
+```shell
+docker build -t my-app:latest .
+```
+
+Run the image:
+
+```shell
+docker run --rm my-app:latest
+```
+
+If your application listens on a network port, define the `EXPOSE <PORT>` option in `Dockerfile` and specify `-p <PORT_MAP>` in `docker run ...` command.
+
+
+### Docker Compose
+
+This repository also includes a `docker-compose.yml` file at the project root to help run the application (and related services) in local containers.
+
+Basic commands:
+
+- Start containers:
+
+```shell
+docker compose up
+```
+
+- Stop and remove containers, networks and volumes created by Compose:
+
+```shell
+docker compose down
+```
+
+- Rebuild images and start (useful after code or dependency changes):
+
+```shell
+docker compose up --build
+```
+
+For more information and advanced usage, see the official Docker Compose documentation: [Docker Compose docs][docker-compose].
+
 ## Roadmap
 
-- Container ready;
 - Integration tests;
 - Use of Node.js native support for TypeScript;
 
@@ -93,3 +137,4 @@ npm install
 [vscode-jest]: https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest
 [ncu]: https://github.com/raineorshine/npm-check-updates
 [node]: https://nodejs.org/
+[docker-compose]: https://docs.docker.com/compose/
