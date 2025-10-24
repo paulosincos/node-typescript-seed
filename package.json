@@ -20,7 +20,8 @@
     "update-packages:patch": "npx -- npm-check-updates --target patch -u",
     "test": "jest ./tests --coverage=false",
     "test:watch": "jest ./tests --coverage=false --watch=true",
-    "test:coverage": "jest ./tests --coverage"
+    "test:coverage": "jest ./tests --coverage",
+    "test:integration": "jest ./tests/integration --coverage=false"
   },
   "keywords": ["nodejs","typescript","jest","seed","template","boilerplate"],
   "author": "paulosincos@hotmail.com",
