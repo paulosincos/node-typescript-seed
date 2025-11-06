@@ -18,9 +18,9 @@
     "update-packages:major": "npx -- npm-check-updates --target latest -u",
     "update-packages:minor": "npx -- npm-check-updates --target minor -u",
     "update-packages:patch": "npx -- npm-check-updates --target patch -u",
-    "test": "jest ./tests --coverage=false",
-    "test:watch": "jest ./tests --coverage=false --watch=true",
-    "test:coverage": "jest ./tests --coverage"
+    "test": "jest --coverage=false",
+    "test:watch": "jest --coverage=false --watch=true",
+    "test:coverage": "jest --coverage"
   },
   "keywords": ["nodejs","typescript","jest","seed","template","boilerplate"],
   "author": "paulosincos@hotmail.com",
